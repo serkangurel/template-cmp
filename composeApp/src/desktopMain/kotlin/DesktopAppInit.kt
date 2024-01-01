@@ -1,0 +1,3 @@
+fun desktopAppInit() {
+    appInit()
+}

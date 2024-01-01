@@ -4,13 +4,20 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 
 fun main() = application {
+    desktopAppInit()
     Window(onCloseRequest = ::exitApplication, title = "template-cmp") {
-        App()
+        App(
+            darkTheme = false,
+            dynamicColor = false
+        )
     }
 }
 
 @Preview
 @Composable
 fun AppDesktopPreview() {
-    App()
+    App(
+        darkTheme = false,
+        dynamicColor = false
+    )
 }
